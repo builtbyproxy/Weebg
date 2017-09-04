@@ -1,0 +1,16 @@
+{
+  "name": "weebg",
+  "version": "1.2.9",
+  "description": "Teach people to lock their computers when unattended. Set the Background of their device to an embarassing image randomly scraped from the web.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "whatever": "node index.js",
+    "default": "npm view weebg version"
+  },
+  "author": "Lachlan Young",
+  "license": "ISC",
+  "dependencies": {
+    "wallpaper": "^2.5.0"
+  }
+}
