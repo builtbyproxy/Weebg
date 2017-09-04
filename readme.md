@@ -21,7 +21,7 @@ $ npm init
 Spam Enter Until Complete
 
 $ npm install --save weebg
-$ cd node_modules
+$ cd node_modules/weebg
 $ node index.js
 ```
 

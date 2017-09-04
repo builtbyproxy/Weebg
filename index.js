@@ -1,5 +1,16 @@
 #! /usr/bin/env node
 
-const wallpaper = require('wallpaper');
-wallpaper.set('./bg.jpg');
-console.log("Done");
+var wallpaper = require('wallpaper');
+var path = './bg.jpg';
+
+function setWallpaper()
+{
+    wallpaper.set(path);
+    console.log("Processing");
+    //
+    // wallpaper.get().then(imagePath => {
+    //     console.log(imagePath);
+    // });
+}
+
+setWallpaper();
