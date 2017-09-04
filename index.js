@@ -6,7 +6,7 @@ var path = './bg.jpg';
 function setWallpaper()
 {
     wallpaper.set(path);
-    console.log("Processing");
+    console.log("Path Is: " + path);
     //
     // wallpaper.get().then(imagePath => {
     //     console.log(imagePath);
