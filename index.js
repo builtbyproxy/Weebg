@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 var wallpaper = require('wallpaper');
-var path = './bg.jpg';
+var path = './weebgReferenceBackground.jpg';
 
 function setWallpaper()
 {
