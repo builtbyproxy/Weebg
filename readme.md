@@ -1,5 +1,5 @@
 # Weebg
-Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character
+Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
 
 #
 ### Installation and Use
