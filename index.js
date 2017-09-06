@@ -4,8 +4,8 @@ var wallpaper = require('wallpaper');
 var fs = require('fs');
 var request = require('request');
 
-var imgUrls = ["http://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "http://www.misucell.com/data/out/9/IMG_340822.png", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
-var imgUrl = ""
+var imgUrls = ["https://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169619.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-386491.jpg", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
+var imgUrl = "";
 var imgName = "";
 
 var pathToModule = require('path').dirname(require.main.filename);
@@ -18,6 +18,7 @@ function setImgUrl(){
 
     //Append
     imgUrl = imgUrls[i];
+    imgUrl = "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-517055.jpg";
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
 }
 
@@ -51,7 +52,6 @@ function saveWallpaper()
 
 function setWallpaper()
 {
-    console.log("Path Is: " + path);
     wallpaper.set(path);
     console.log("3. Image Should Be Set");
 }

@@ -32,6 +32,7 @@ Weebg is currently utilising the following dependencies:
 | Plugin | README |
 | ------ | ------ |
 | Wallpaper | https://www.npmjs.com/package/wallpaper |
+| Request | https://www.npmjs.com/package/request |
 
 
 
