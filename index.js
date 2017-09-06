@@ -1,14 +1,9 @@
 #! /usr/bin/env node
 
 var wallpaper = require('wallpaper');
-var http = require('http');
-var fs = require('fs');
-
-var imgUrls = ["http://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "http://www.misucell.com/data/out/9/IMG_340822.png", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
-var imgUrl = ""
-var imgName = "";
 
 var pathToModule = require('path').dirname(require.main.filename);
+<<<<<<< HEAD
 var path = "";
 
 function setImgUrl(){
@@ -55,11 +50,17 @@ function saveWallpaper()
     console.log("2. Image Should Be Saved");
     setWallpaper();
 }
+=======
+var imgName = "weebgReferenceBackground.jpg";
+var path = pathToModule + "/" + imgName;
+>>>>>>> 79d576bcb9cc33ba3e05e5c188008f0299067810
 
 function setWallpaper()
 {
+    console.log("Path To BG Image: " + path);
     wallpaper.set(path);
-    console.log("3. Image Should Be Set");
+    console.log("Background Successfully Changed!");
+
 }
 
-saveWallpaper();
+setWallpaper();

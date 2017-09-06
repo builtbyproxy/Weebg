@@ -1,5 +1,5 @@
 # Weebg
-Weeaboo Background (weebg) is a simple tool that sets the background of any Windows/Mac/Linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
+Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
 
 #
 ### Installation and Use
@@ -38,7 +38,7 @@ Weebg is currently utilising the following dependencies:
 
 ### Todos
 
-  - Random Image Scraping for different backgrounds (most likely this will temporarily implement the wallhaven NPM Module)
+  - Random Image Scraping for different backgrounds
   - A Timer for a delayed 'Attack'
 
 License
