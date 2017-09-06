@@ -1,6 +1,6 @@
 {
   "name": "weebg",
-  "version": "1.4.3",
+  "version": "1.4.5",
   "description": "Teach people to lock their computers when unattended. Set the Background of their device to an embarassing image randomly scraped from the web.",
   "main": "index.js",
   "bin": "./index.js",
@@ -8,12 +8,6 @@
     "url": "https://github.com/builtbyproxy/weebg/issues",
     "email": "project@hostname.com"
   },
-  "keywords": [
-    "background",
-    "weebg",
-    "utility",
-    "anime"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/builtbyproxy/weebg.git"
