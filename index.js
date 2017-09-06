@@ -20,13 +20,20 @@ function setImgUrl(){
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
 }
 
-function setImgName(){
+async function setImgName(){
     setImgUrl();
     var path = pathToModule + "/" + imgName;
     var file = fs.createWriteStream(path);
-    var request = http.get(imgUrl, function(response) {
-        response.pipe(file);
-    });
+
+    console.log(path);
+
+    var response = await http.get(imgUrl);
+    response.pipe(file);
+
+    //
+    // var request = await http.get(imgUrl, function(response) {
+    //     response.pipe(file);
+    // });
 
     console.log("1. Image Should Be Located")
 }
