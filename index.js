@@ -18,7 +18,6 @@ function setImgUrl(){
 
     //Append
     imgUrl = imgUrls[i];
-    imgUrl = "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-517055.jpg";
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
 }
 
@@ -26,7 +25,7 @@ async function setImgName(){
     setImgUrl();
 
     path = pathToModule + "/" + imgName;
-    request(imgUrl).pipe(fs.createWriteStream(path));
+    await request(imgUrl).pipe(fs.createWriteStream(path));
 
     console.log("1. Image Should Be Located")
 }
@@ -38,22 +37,17 @@ function saveWallpaper()
         {
             fs.unlinkSync(path);
             await setImgName();
-            console.log("2. Image Should Be Saved");
-            setWallpaper();
+            console.log("2. Image Should Be Replaced");
+            await wallpaper.set(path);
         }
         else if(err.code == 'ENOENT')
         {
             await setImgName();
             console.log("2. Image Should Be Saved");
-            setWallpaper();
+            await wallpaper.set(path);
+            console.log("3. Image Should Be Set");
         }
     });
-}
-
-async function setWallpaper()
-{
-    await wallpaper.set(path);
-    console.log("3. Image Should Be Set");
 }
 
 saveWallpaper();
