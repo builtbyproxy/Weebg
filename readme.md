@@ -2,8 +2,10 @@
 Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
 
 #
-### Installation and Use
-#
+## Installation and Use
+### Requirements
+
+  - Node 7+
 ##### If Sudo:
 
 ```sh
@@ -24,9 +26,7 @@ $ npm install --save weebg
 $ cd node_modules/weebg
 $ node index.js
 ```
-### Requirements
 
-  - Node 7+
 #
 ### Dependecies Used
 
