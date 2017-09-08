@@ -35,7 +35,7 @@ function saveWallpaper()
         if(err == null)
         {
             //Replace Old Wallpaper
-            // fs.unlinkSync(path);
+            fs.unlinkSync(path);
             await setImgName();
             console.log("   2. Image Should Be Replaced");
 
