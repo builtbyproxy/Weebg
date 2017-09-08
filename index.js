@@ -50,9 +50,9 @@ function saveWallpaper()
     });
 }
 
-function setWallpaper()
+async function setWallpaper()
 {
-    wallpaper.set(path);
+    await wallpaper.set(path);
     console.log("3. Image Should Be Set");
 }
 
