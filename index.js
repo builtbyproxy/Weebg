@@ -19,31 +19,36 @@ function setImgUrl(){
     //Append
     imgUrl = imgUrls[i];
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
+    path = pathToModule + "/" + imgName;
 }
 
 async function setImgName(){
-    setImgUrl();
-
-    path = pathToModule + "/" + imgName;
     await request(imgUrl).pipe(fs.createWriteStream(path));
-
     console.log("1. Image Should Be Located")
 }
 
 function saveWallpaper()
 {
-    fs.stat(imgName, async function(err, stat) {
+    setImgUrl();
+    console.log("Path Is: " + path);
+    fs.stat(path, async function(err, stat) {
         if(err == null)
         {
+            //Replace Old Wallpaper
             fs.unlinkSync(path);
             await setImgName();
             console.log("2. Image Should Be Replaced");
+
+            //Set Wallpaper
             await wallpaper.set(path);
+            console.log("3. Image Should Be Set");
         }
         else if(err.code == 'ENOENT')
         {
             await setImgName();
             console.log("2. Image Should Be Saved");
+
+            //Set Wallpaper
             await wallpaper.set(path);
             console.log("3. Image Should Be Set");
         }
