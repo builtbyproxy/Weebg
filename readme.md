@@ -24,8 +24,10 @@ $ npm install --save weebg
 $ cd node_modules/weebg
 $ node index.js
 ```
+### Requirements
 
-
+  - Node 7+
+#
 ### Dependecies Used
 
 Weebg is currently utilising the following dependencies:
@@ -33,8 +35,6 @@ Weebg is currently utilising the following dependencies:
 | ------ | ------ |
 | Wallpaper | https://www.npmjs.com/package/wallpaper |
 | Request | https://www.npmjs.com/package/request |
-
-
 
 
 ### Todos
