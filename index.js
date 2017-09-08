@@ -24,33 +24,31 @@ function setImgUrl(){
 
 async function setImgName(){
     await request(imgUrl).pipe(fs.createWriteStream(path));
-    console.log("1. Image Should Be Located")
+    console.log("   1. Image Should Be Located")
 }
 
 function saveWallpaper()
 {
     setImgUrl();
     console.log("Path Is: " + path);
-    fs.stat(path, async function(err, stat) {
+    fs.stat(path, async function(err, stat){
         if(err == null)
         {
             //Replace Old Wallpaper
-            fs.unlinkSync(path);
+            // fs.unlinkSync(path);
             await setImgName();
-            console.log("2. Image Should Be Replaced");
+            console.log("   2. Image Should Be Replaced");
 
             //Set Wallpaper
             await wallpaper.set(path);
-            console.log("3. Image Should Be Set");
-        }
-        else if(err.code == 'ENOENT')
-        {
+            console.log("   3. Image Should Be Set");
+        } else if(err.code == 'ENOENT') {
             await setImgName();
-            console.log("2. Image Should Be Saved");
+            console.log("   2. Image Should Be Saved");
 
             //Set Wallpaper
             await wallpaper.set(path);
-            console.log("3. Image Should Be Set");
+            console.log("   3. Image Should Be Set");
         }
     });
 }
