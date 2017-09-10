@@ -3,6 +3,7 @@
 var wallpaper = require('wallpaper');
 var fs = require('fs');
 var request = require('request');
+var os = require('os');
 
 var imgUrls = ["https://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169619.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-386491.jpg", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
 var imgUrl = "";
@@ -11,6 +12,13 @@ var imgName = "";
 var pathToModule = require('path').dirname(require.main.filename);
 var path = "";
 
+function getPlatform(){
+    if(os.platform == "linux" || os.platform == "darwin"){
+        platformSeperator = "/";
+    } else if (os.platform() == "win32") {
+        platformSeperator = "\\";
+    }
+}
 
 function setImgUrl(){
     var i = Math.floor(Math.random() * (imgUrls.length - 0 + 1)) + 0;
@@ -19,7 +27,9 @@ function setImgUrl(){
     //Append
     imgUrl = imgUrls[i];
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
-    path = pathToModule + "/" + imgName;
+    var platformSeperator = pathToModule.charAt(pathToModule.length - 6);
+    console.log(platformSeperator);
+    path = pathToModule + platformSeperator + imgName;
 }
 
 async function setImgName(){
