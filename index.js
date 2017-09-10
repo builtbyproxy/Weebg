@@ -28,7 +28,6 @@ function setImgUrl(){
     imgUrl = imgUrls[i];
     imgName = "weebgReferenceBackground" + imgUrl.substring(imgUrl.length - 4);
     var platformSeperator = pathToModule.charAt(pathToModule.length - 6);
-    console.log(platformSeperator);
     path = pathToModule + platformSeperator + imgName;
 }
 
