@@ -1,8 +1,22 @@
 # Weebg
 Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
-
 #
 ## Installation and Use
+
+### Operating System Versioning:
+##### Linux:
+```sh
+  Latest Version
+```
+##### Windows:
+```sh
+  Version 1.4.0
+```
+##### Macintosh:
+```sh
+  Version 1.4.0
+```
+
 ### Requirements
 
   - Node 7+
@@ -41,6 +55,8 @@ Weebg is currently utilising the following dependencies:
 
   - Random Image Scraping for different backgrounds
   - A Timer for a delayed 'Attack'
+  - Support Windows
+  - Support Macintosh
 
 License
 ----

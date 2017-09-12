@@ -12,13 +12,13 @@ var imgName = "";
 var pathToModule = require('path').dirname(require.main.filename);
 var path = "";
 
-function getPlatform(){
-    if(os.platform == "linux" || os.platform == "darwin"){
-        platformSeperator = "/";
-    } else if (os.platform() == "win32") {
-        platformSeperator = "\\";
-    }
-}
+// function getPlatform(){
+//     if(os.platform == "linux" || os.platform == "darwin"){
+//         platformSeperator = "/";
+//     } else if (os.platform() == "win32") {
+//         platformSeperator = "\\";
+//     }
+// }
 
 function setImgUrl(){
     var i = Math.floor(Math.random() * (imgUrls.length - 0 + 1)) + 0;
@@ -44,7 +44,7 @@ function saveWallpaper()
         if(err == null)
         {
             //Replace Old Wallpaper
-            fs.unlinkSync(path);
+            // fs.unlinkSync(path);
             await setImgName();
             console.log("   2. Image Should Be Replaced");
 
