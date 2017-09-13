@@ -57,6 +57,9 @@ Weebg is currently utilising the following dependencies:
   - A Timer for a delayed 'Attack'
   - Support Windows
   - Support Macintosh
+  
+### Known Issues - please post create a ticket on the github for any issues
+  - Node 8.5.0 is known to break for certain versions.
 
 License
 ----
