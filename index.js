@@ -20,6 +20,14 @@ var path = "";
 //     }
 // }
 
+function declareStatus(){
+    console.log(" ");
+    console.log("We detect you are on a " + os.platform() + " system.");
+    console.log("If this didn't work, try using sudo npm install -g weebg@1.4.0");
+    console.log("However, if you don't have sudo. Just try npm install weebg@1.4.0");
+    console.log("For more details please check out the NPM Page: http://npmjs.com/package/weebg")
+}
+
 function setImgUrl(){
     var i = Math.floor(Math.random() * (imgUrls.length - 0 + 1)) + 0;
     if(i >= imgUrls.length){i--;}
@@ -51,6 +59,8 @@ function saveWallpaper()
             //Set Wallpaper
             await wallpaper.set(path);
             console.log("   3. Image Should Be Set");
+            declareStatus();
+
         } else if(err.code == 'ENOENT') {
             await setImgName();
             console.log("   2. Image Should Be Saved");
@@ -58,6 +68,7 @@ function saveWallpaper()
             //Set Wallpaper
             await wallpaper.set(path);
             console.log("   3. Image Should Be Set");
+            declareStatus();
         }
     });
 }
