@@ -30,6 +30,13 @@ function declareStatus(){
 
 function setImgUrl(){
     var i = Math.floor(Math.random() * (imgUrls.length - 0 + 1)) + 0;
+
+    // var tmpUrl = imgUrls[i];
+    // if(tmpUrl != ""){
+    //     imgUrl.push(tmpUrl);
+    // }
+    // imgUrl.pop(i);
+
     if(i >= imgUrls.length){i--;}
 
     //Append
