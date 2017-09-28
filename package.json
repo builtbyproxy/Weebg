@@ -1,6 +1,6 @@
 {
   "name": "weebg",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "Teach people to lock their computers when unattended. Set the Background of their device to an embarassing image randomly scraped from the web.",
   "main": "index.js",
   "bin": "./index.js",
