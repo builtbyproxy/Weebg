@@ -5,7 +5,7 @@ var fs = require('fs');
 var request = require('request');
 var os = require('os');
 
-var imgUrls = ["https://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169619.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-386491.jpg", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
+var imgUrls = ["https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-205791.jpg", "https://cdn.wallpapersafari.com/89/55/2VKyOb.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169619.jpg", "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-386491.jpg", "http://wallpaperscraft.com/image/cat_girl_nekomimi_art_anime_girl_103991_1920x1080.jpg"];
 var imgUrl = "";
 var imgName = "";
 
@@ -30,6 +30,13 @@ function declareStatus(){
 
 function setImgUrl(){
     var i = Math.floor(Math.random() * (imgUrls.length - 0 + 1)) + 0;
+
+    // var tmpUrl = imgUrls[i];
+    // if(tmpUrl != ""){
+    //     imgUrl.push(tmpUrl);
+    // }
+    // imgUrl.pop(i);
+
     if(i >= imgUrls.length){i--;}
 
     //Append
