@@ -1,8 +1,8 @@
-# Weebg
-
-![alt text](https://i.imgur.com/SNh4eNI.png)
+[![alt text](https://i.imgur.com/SNh4eNI.png)](http://npmjs.com/packages/weebg)
 
 Weeaboo Background (weebg) is a simple tool that sets the background of a linux system to an embarassing Anime Character. Teach your friends to lock their computers before they leave them.
+#
+[![Donate](https://www.newsforpublic.com/wp-content/uploads/2015/08/buy-me-a-coffee.png)](http://paypal.me/LachlanYoung)
 #
 ## Installation and Use
 
