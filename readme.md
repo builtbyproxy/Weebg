@@ -60,7 +60,7 @@ Weebg is currently utilising the following dependencies:
 
 ### Todos
 
-  - Random Image Scraping for different backgrounds
+  - Random Image Scraping for different backgrounds | Potential Album: https://imgur.com/a/opmvJ
   - A Timer for a delayed 'Attack'
   - Support Windows
   - Support Macintosh
